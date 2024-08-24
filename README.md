@@ -44,3 +44,26 @@ PROJECT STRUCTURE
 server/: Contains the backend code, including the Express API and MongoDB models.
 client/: Contains the frontend code, built with React.
 my-new-branch: All the code is available in this branch.
+
+CLERK SETUP
+## Setup Clerk for Authentication
+
+This project uses [Clerk](https://clerk.dev/) for user authentication and management.
+
+### Step 1: Create a Clerk Account
+
+1. Go to [Clerk.dev](https://clerk.dev/) and sign up for an account.
+2. Create a new Clerk application in the Clerk dashboard.
+
+### Step 2: Obtain API Keys
+
+1. In the Clerk dashboard, navigate to your application and find the API keys.
+2. Copy the `Frontend API`, `API Key`, and `JWT Key`.
+
+### Step 3: Configure Environment Variables
+
+1. Create a `.env` file in the root of the `server` directory (or wherever appropriate).
+2. Add the following environment variables:
+
+```plaintext
+VITE_CLERK_PUBLISHABLE_KEY=your-clerk-api-key
