@@ -1,5 +1,3 @@
-# Clinic_Management_System
-
 # Clinic Management System
 
 This is a full-stack Clinic Management System project that allows managing patients, prescriptions, and other related data. The project includes a Node.js backend and a React frontend. All the code for this project is available in the `my-new-branch` branch.
