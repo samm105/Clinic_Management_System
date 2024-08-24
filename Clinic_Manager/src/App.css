@@ -1,0 +1,230 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.HomePage-Container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.p-datatable .p-datatable-header, 
+.p-datatable .p-datatable-footer {
+  background-color: transparent !important;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  background-color: transparent !important;
+  color: #000 !important;
+}
+
+.p-datatable .p-datatable-tbody > tr:nth-child(even) > td {
+  background-color: transparent !important;
+}
+
+.p-datatable .p-datatable-tbody > tr:nth-child(odd) > td {
+  background-color: transparent !important;
+}
+
+.p-button-primary {
+  background-color: #007ad9; /* Customize primary button color */
+  color: #ffffff !important;
+}
+
+.p-button:hover {
+  background-color: #0056b3; /* Darken on hover */
+}
+
+.p-button:active {
+  background-color: #004494 !important;
+}
+
+.datatable-wrapper .p-datatable-wrapper {
+  height: 400px; /* Adjust this to match your desired table height */
+}
+
+.p-datatable-empty {
+  height: 10px; /* Adjust this to match your row height */
+}
+
+/* Ensure the text color of the buttons is visible */
+.p-button-info, .p-button-success {
+  border-radius: 50px !important; /* Round the buttons */
+  color: black !important; /* Set the text color to white */
+  font-weight:lighter; /* Make the text bold for better visibility */
+  font-size: 12px !important; /* Smaller text size */
+  padding: 0.4rem 1rem !important; /* Adjust padding for smaller size */
+  border: none !important; /* Remove border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow */
+  transition: background-color 0.3s, transform 0.3s;
+  margin-right: 10px !important;
+}
+
+.p-button-info:hover, .p-button-success:hover {
+  background-color: #007ad9 !important; /* Darken background on hover */
+  transform: scale(1.05) !important; /* Slightly enlarge on hover */
+}
+
+.p-button-text,
+.p-button-add-patient {
+  border-radius: 50px; /* Make the buttons round */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  padding: 0.4em 1.2em; /* Adjust padding for better appearance */
+  font-weight: bold; /* Make the text bold */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.p-button-text:hover,
+.p-button-add-patient:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    background-color: #007ad9; /* Darken the background color on hover */
+}
+
+.p-button-text {
+  color: black !important; /* Set the text color to black */
+  background-color: transparent; /* Keep background transparent for 'Cancel' */
+}
+
+.p-button-add-patient {
+  background-color: transparent; /* Primary blue color for 'Add' */
+  color: black !important; /* Ensure the text color is white */
+}
+
+.p-text {
+  font-size: 1rem; /* Adjust the font size as needed */
+  margin-top: 0.5rem; /* Space between the label and text */
+}
+
+/* General styling for the dialog */
+.ui-dialog {
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  background-color: #007ad9;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 20px;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-dialog-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.ui-dialog .ui-dialog-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Styling for the patient details fields */
+.p-field label {
+  font-weight: bold;
+  color: #333;
+}
+
+.p-field .p-text {
+  font-size: 1rem;
+  color: #555;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+}
+
+.p-field {
+  margin-bottom: 15px;
+}
+
+/* Styling for the prescriptions section */
+.p-mt-3 h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #007ad9;
+}
+
+.p-d-flex.p-flex-column {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.p-d-flex.p-flex-column div {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+/* Styling for the "No prescriptions found" message */
+p {
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Styling for the close button */
+.p-button-text {
+  background-color: #007ad9;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.p-button-text:hover {
+  background-color: #005f9c;
+  color: #fff;
+}
+
+
+
+

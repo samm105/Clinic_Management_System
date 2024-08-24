@@ -1,0 +1,91 @@
+.header {
+  background-color: #007ad9; /* Background color for the header */
+  color: white; /* Text color for the header */
+  padding: 20px 20px; /* Padding for spacing */
+  position: fixed; /* Keep the header fixed at the top */
+  top: 0; /* Position at the top */
+  left: 0; /* Align to the left edge */
+  right: 0; /* Align to the right edge */
+  z-index: 1000; /* Ensure it appears above other content */
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-end; /* Align navigation to the right */
+  align-items: center; /* Center items vertically */
+}
+
+.header-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Full width to fill the header */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+}
+
+.app-name {
+  font-size: 24px;
+  font-style:oblique;
+  font-weight: bold;
+  margin-right: auto;
+  color:beige;
+}
+
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation ul li {
+    display: inline;
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #007ad9;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #005bb5;
+  }
+  
+  .navigation ul li i {
+    margin-right: 5px; /* Add some space between the icon and the text */
+  }
+
+  
