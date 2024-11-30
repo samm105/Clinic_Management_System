@@ -68,8 +68,8 @@ const Header = ({ onAddPatient }) => {
 
   const renderFooter = () => (
       <div>
-          <Button label="Cancel" icon="pi pi-times" onClick={handleDialogHide} className="p-button-text" />
-          <Button label="Submit" icon="pi pi-check" onClick={handleSubmitPrescription} className="p-button-text" />
+          <Button label="Cancel" icon="pi pi-times" onClick={handleDialogHide} className="p-button-add-patient" />
+          <Button label="Submit" icon="pi pi-check" onClick={handleSubmitPrescription} className="p-button-add-patient" />
       </div>
   );
 
