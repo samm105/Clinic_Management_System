@@ -109,15 +109,6 @@
   transform: scale(1.05) !important; /* Slightly enlarge on hover */
 }
 
-.p-button-text,
-.p-button-add-patient {
-  border-radius: 50px; /* Make the buttons round */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
-  padding: 0.4em 1.2em; /* Adjust padding for better appearance */
-  font-weight: bold; /* Make the text bold */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-}
-
 .p-button-text:hover,
 .p-button-add-patient:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
