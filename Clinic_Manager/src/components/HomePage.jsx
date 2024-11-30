@@ -263,7 +263,7 @@ const handleDelete = async (id) => {
                         )}
                     </div>
         <div className="p-d-flex p-jc-end">
-            <Button label="Close" icon="pi pi-times" className="p-button-text" onClick={closeViewDialog} />
+            <Button label="Close" icon="pi pi-times" className="p-button-add-patient" onClick={closeViewDialog} />
         </div>
     </Dialog>
 )}  
