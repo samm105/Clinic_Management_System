@@ -67,3 +67,4 @@ This project uses [Clerk](https://clerk.dev/) for user authentication and manage
 
 ```plaintext
 VITE_CLERK_PUBLISHABLE_KEY=your-clerk-api-key
+Author - Samm105
